@@ -17,6 +17,11 @@ header {
     text-align: center;
     padding: 20px;
 }
+.pos{
+    position: sticky;
+    top:0;
+    width:100%;
+}
 
 .headeraH1 {
     margin: 0;
@@ -63,6 +68,10 @@ nav a {
 
 nav a:hover {
     background-color: #505050;  /* Darker shade for hover */
+}
+nav .pointer{
+    color:coral;
+    
 }
 
 /* Banner Styles */
