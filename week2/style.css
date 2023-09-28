@@ -20,6 +20,8 @@ header {
 
 .headeraH1 {
     margin: 0;
+    font-family: 'Satisfy', cursive;
+
 }
 
 .banner {
@@ -42,6 +44,8 @@ nav ul {
     list-style-type: none;
     margin: 0;
     padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+
 }
 
 nav li {
@@ -91,8 +95,21 @@ main {
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
+.titles{
+    font-family: 'Lobster Two', cursive;
+    font-size: 30px;
+}
+
+
 main h3 {
     margin-top: 20px;
+}
+h3{
+    font-family: 'Bangers', cursive;
+}
+
+p{
+    font-family: 'Taviraj', serif;
 }
 
 /* Service Columns */
