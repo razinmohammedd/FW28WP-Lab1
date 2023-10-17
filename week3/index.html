@@ -35,8 +35,34 @@
     </nav>
 
     <!-- Banner Section -->
-    <section class="banner-container">
-      <img src="images/travel banner.svg" alt="Illustrative banner of travel destinations" class="centered-banner">
+    <script>
+      var i=0;
+      var images=[];
+      var time=3500;
+
+      images[0]="Images/image1.jpg";
+      images[1]="Images/image2.jpg";
+      images[2]="Images/image3.jpg";
+      images[3]="Images/image4.jpg";
+      images[4]="Images/image5.jpg";
+      images[5]="Images/image6.jpg";
+      images[6]="Images/image7.jpg";
+      images[7]="Images/image8.jpg";
+      function changeImg(){
+        document.slide.src=images[i];
+        if (i<images.length -1){
+          i++;
+        }else{
+          i=0;
+        }
+
+        setTimeout("changeImg()",time);
+      }
+      window.onload=changeImg;
+
+    </script>
+    <section class="imagecarousel">
+      <img name="slide" alt="Alt goes here" width="70%" />
     </section>
 
     <!-- Main Content Section -->

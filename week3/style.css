@@ -39,6 +39,7 @@ header {
 nav{
     position: sticky;
     top:0px;
+    z-index: 1000;
 }
 nav ul {
     background-color:antiquewhite;
@@ -74,24 +75,19 @@ nav a:hover {
 }
 
 /* Banner Styles */
-.banner-container {
+.imagecarousel{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: auto;
-    width: 100%;
-    overflow: hidden;
+    margin-top: 20px;
+}
+.imagecarousel img {
+    width: 60%;
+    filter: brightness(75%);
+    border: 10px solid white; 
     
-   
 }
 
-.centered-banner {
-    padding: 30px;
-    max-width: 70%;
-    height: auto;
-    
-    
-}
 
 
 /* Main Content Styles */
