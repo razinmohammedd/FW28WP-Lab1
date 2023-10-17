@@ -4,21 +4,6 @@
   <meta charset="UTF-8">
   <title>Gallery - Wanderlust Voyages</title>
   <link rel="stylesheet" href="style.css">
-  <style>
-   .gallery-container {
-	margin: 0 auto;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	margin-top: 40px;
-  }
-
-   .gallery-container img {
-	width: 24%;
-	margin-bottom: 20px;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  }
-  </style>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
@@ -39,17 +24,38 @@
   
   <main class="services">
       <h1>Gallery</h1>
+  <!--Slide Show -->
+  <div class ="container">
+    <div class = "mySlides">
+      <div class="numberText">1/8</div>
+      <img src="" alt="" class="slideshow-img">
+    </div>
+    <div class = "mySlides">
+      <div class="numberText">2/8</div>
+      <img src="" alt="" class="slideshow-img">
+    </div><div class = "mySlides">
+      <div class="numberText">3/8</div>
+      <img src="" alt="" class="slideshow-img">
+    </div><div class = "mySlides">
+      <div class="numberText">4/8</div>
+      <img src="" alt="" class="slideshow-img">
+    </div><div class = "mySlides">
+      <div class="numberText">5/8</div>
+      <img src="" alt="" class="slideshow-img">
+    </div><div class = "mySlides">
+      <div class="numberText">6/8</div>
+      <img src="" alt="" class="slideshow-img">
+    </div><div class = "mySlides">
+      <div class="numberText">7/8</div>
+      <img src="" alt="" class="slideshow-img">
+    </div><div class = "mySlides">
+      <div class="numberText">8/8</div>
+      <img src="" alt="" class="slideshow-img">
+    </div>
+    <a class="prev" onclick="plusSlides(-1)"></a>
+    <a class="next" onclick="plusSlides(+1)"></a>
 
-		<div class="gallery-container">
-			<img src="images/1.jpeg" alt="Spa Image 1">
-			<img src="images/2.jpeg" alt="Spa Image 2">
-			<img src="images/3.jpeg" alt="Spa Image 3">
-			<img src="images/4.jpeg" alt="Spa Image 4">
-			<img src="images/5.jpeg" alt="Spa Image 5">
-			<img src="images/6.jpeg" alt="Spa Image 6">
-			<img src="images/7.jpeg" alt="Spa Image 7">
-			<img src="images/8.jpeg" alt="Spa Image 7">
-		</div>
+  </div>
    <!-- Call to Action -->
    <section class="cta-container">
     <h2>Ready to Experience Our Services?</h2>
@@ -67,5 +73,26 @@
     <p >&copy; 2024 Wanderlust Voyages | Travel Agency. All rights reserved.</p>
   </footer>
  </div>
+
+ <script>
+  let slideIndex = 1; // Declaring Variable to Record Current Slide Position
+
+  showSlides(slideIndex);
+  function plusSlides(n){
+    showSlides(slideIndex =+ n);
+  }
+
+  function currentSlide(n){
+    showSlides(slideIndex= n);
+  }
+
+  function showSlides(n){
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+  }
+
+
+
+ </script>
 </body>
 </html>
